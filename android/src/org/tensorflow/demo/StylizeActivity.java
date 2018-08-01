@@ -261,9 +261,11 @@ public class StylizeActivity extends CameraActivity implements OnImageAvailableL
                         public void onClick(final View v) {
                             if (textureCopyBitmap != null) {
                                 ImageUtils.saveBitmap(textureCopyBitmap, "Processed" + frameNum + ".png");
+                                ImageUtils.saveBitmap(croppedBitmap, "UnProcessed" + frameNum + ".png");
+
                                 Toast.makeText(
                                         StylizeActivity.this,
-                                        "Saved image to: /sdcard/tensorflow/" + "Processed" + frameNum + ".png",
+                                        "Saved images to: /sdcard/tensorflow/" + frameNum + ".png",
                                         Toast.LENGTH_LONG)
                                         .show();
                             }
