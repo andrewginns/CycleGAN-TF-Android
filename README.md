@@ -1,4 +1,4 @@
-# CycleGAN Tensorflow for Android
+# TF-View: CycleGAN Tensorflow for Android
 
 Android App for inference on a trained CycleGAN model
 
